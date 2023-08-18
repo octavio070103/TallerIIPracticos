@@ -1,0 +1,10 @@
+E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\nuevo\Practico1\Practico1\bin\Debug\Practico1.exe.config
+E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\nuevo\Practico1\Practico1\bin\Debug\Practico1.exe
+E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\nuevo\Practico1\Practico1\bin\Debug\Practico1.pdb
+E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\nuevo\Practico1\Practico1\obj\Debug\Practico1.csproj.AssemblyReference.cache
+E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\nuevo\Practico1\Practico1\obj\Debug\Practico1.Form1.resources
+E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\nuevo\Practico1\Practico1\obj\Debug\Practico1.Properties.Resources.resources
+E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\nuevo\Practico1\Practico1\obj\Debug\Practico1.csproj.GenerateResource.cache
+E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\nuevo\Practico1\Practico1\obj\Debug\Practico1.csproj.CoreCompileInputs.cache
+E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\nuevo\Practico1\Practico1\obj\Debug\Practico1.exe
+E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\nuevo\Practico1\Practico1\obj\Debug\Practico1.pdb
