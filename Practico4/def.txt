@@ -1,0 +1,51 @@
+TP4 definiciones que use
+como ver si un checkbox esta marcado
+La clase CheckBox tiene una propiedad llamada Checked 
+(si tiene el valor true significa que el CheckBox esta seleccionado, en caso contrario no esta seleccionado)
+
+----------------
+para validar los numeros enteros
+ if (!int.TryParse(numeroFinal, out numero)) {}
+
+La línea de código if (!int.TryParse(numeroFinal, out numero)) tiene como propósito validar si numeroFinal puede ser convertido exitosamente a un valor numérico entero (int) y almacenado en la variable numero. Vamos a analizar cada parte de esta línea:
+
+int.TryParse(numeroFinal, out numero): Esta es una función que intenta convertir una cadena en un número entero (int). Recibe dos argumentos: el primero es la cadena que deseas convertir, en este caso, numeroFinal. El segundo es una variable de salida (out) donde se almacenará el resultado de la conversión si es exitosa, en este caso, numero.
+
+!: El símbolo de exclamación (!) es el operador de negación. En este contexto, se utiliza para negar el resultado de la función int.TryParse. Si la función devuelve true, la negación ! la convierte en false, y viceversa.
+
+En resumen, esta línea de código verifica si numeroFinal puede convertirse en un valor numérico entero (int) utilizando int.TryParse. Si la conversión es exitosa (es decir, si int.TryParse devuelve true), el bloque dentro del if no se ejecutará, lo que significa que numeroFinal es un número válido. Si la conversión falla (es decir, si int.TryParse devuelve false), el bloque dentro del if se ejecutará, indicando que numeroFinal no es un número válido.
+
+------------------------------
+Los bucles son estructuras de control que permiten ejecutar un bloque de código repetidamente, lo que es especialmente 
+útil cuando necesitas realizar una tarea varias veces. C# ofrece varios tipos de bucles que se adaptan a diferentes situaciones. 
+
+Bucle while:
+El bucle while ejecuta un bloque de código mientras una condición específica sea verdadera.
+indicamos una condición que se ejecutara hasta que la condición sea falsa, es importante que la variable 
+que este en la condición, varíe para que no se produzca un bucle infinito. 
+El bucle while es útil cuando no sabes cuántas veces necesitas ejecutar el código, pero tienes una condición que debe ser verdadera para seguir ejecutando.
+
+Bucle do-while:
+El bucle do-while es similar al bucle while, pero se asegura de que el bloque de código se 
+ejecute al menos una vez antes de verificar la condición.
+sta estructura repetitiva, tiene algo especial y es que como mínimo las instrucciones dentro de la estructura repetitiva al menos una vez, 
+mientras que el while sus instrucciones pueden ejecutarse 0 o N veces. Se sale del bucle cuando la condición del while no se cumple, 
+si esto pasa empieza desde el do. Se utiliza para la validación de datos. 
+El bucle do-while es útil cuando deseas asegurarte de que el código se ejecute al menos una vez, independientemente de la condición.
+
+Bucle for:
+El bucle for se utiliza cuando sabes cuántas veces deseas repetir un bloque de código. 
+Tiene tres partes: la inicialización, la condición y la expresión final.
+ incluye una inicialización de una variable y un incremento o decremento de esa variable, en principio, no es necesario que incluya las 3 partes. Si no indicamos el incremento por defecto es 1.
+El bucle for es ideal cuando sabes exactamente cuántas veces deseas ejecutar un bloque de código.
+
+Bucle foreach:
+El bucle foreach se utiliza para recorrer colecciones de elementos, como listas o arreglos.
+Itera a través de cada elemento de la colección sin necesidad de controlar índices.
+El bucle foreach es excelente para recorrer colecciones de elementos, como arreglos y listas.
+
+
+----------------
+chart en visual
+
+

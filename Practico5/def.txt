@@ -1,0 +1,7 @@
+Manipulación de DataGrid.
+ Utilización de Imágenes en proyecto.
+ Evento CellClick y CellContec.
+ Propiedades de DataGrid.
+ Copiar archivos de disco a proyecto.
+ Estandarizar formatos en TextBox.
+ Utilización de OpenfileDialog
