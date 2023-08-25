@@ -124,7 +124,7 @@
   <data name="btnSalir.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAcrSURBVGhD3Vpr
+        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAcrSURBVGhD3Vpr
         UFVVFFaRh3JRxFJE8cVjgNQ0yTLL0JBBk9D6YySYM5oCKobyVC4KhLx8cBXzOdMMIzaQMVOhhiia04wG
         +UhBmiBn4kdYONoPcUSbr7X2PefcC94H914uaGvmm3P23mvvvb691157n8cAPIdy48YNVFVVITU1DSNG
         jEB4eDieGyLl5eVYvHgxgoJewoABA56GpGdWbt26hebmZrujpaVFjHhZWRni4uKgchv2lNGBE4ZhxZIA
@@ -161,7 +161,7 @@
   <data name="btnEliminar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABH3SURBVHhezVtp
+        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABH3SURBVHhezVtp
         WFTXlvVX/+9f3ZkTzdM4K/Mkk8yzA0bEEQWVQSUq4AQqajTajtEXnyb65T2TaEy6ndIvnTwnjBqNAyog
         KDIoKlW3BqCYoVbvfe4tmQqlikKyv299l6q6dc8+6+699j7nFgPwGqyutg7nL1zGth17MT9pOcInzIS3
         /wT4BEyEb+AkBEdMw5z4JVi3YRuOHT+JsvInyjf7z/qMmKrqapw7fwmhUbF46/3R+MswF4x18YOrZyi8
@@ -244,7 +244,7 @@
   <data name="btnGuardar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAooSURBVHhe7ZwJ
+        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAooSURBVHhe7ZwJ
         UFRXFoapmomOimGZCjHBACIIEZHIACJEFIJoNK6I4ziRKG5BoF3A0RFxMHGJlkaLgHFNg1FckpqMCBkF
         g5poOS6TmJqlXOIk5S6KjksGEpcz9z+Pft00t+lGQV8rr+rT573nnHvO732373u9OJDJUVVVRcnJyeTu
         7k4ODg52j5ubGyUmJtKlS5dqKrT9UIUpKCiQBn9SmDt3bk2lth0szK5du9QArl4BFD5uHsXOXMe89gfL
