@@ -102,8 +102,9 @@ namespace Practico1
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //verifica si la tecla presionada no es una tecla de control (teclas como Enter o Backspace) y no es una letra.
             if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
-            {
+            {// Si la tecla presionada no es una letra y no es una tecla de control, se establece e.Handled en true. Esto significa que el evento se ha manejado y que no se procesará más. Como resultado, la tecla no se insertará en el TextBox.
                 e.Handled = true;
             }
         }

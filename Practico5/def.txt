@@ -1,7 +1,14 @@
-Manipulación de DataGrid.
- Utilización de Imágenes en proyecto.
- Evento CellClick y CellContec.
- Propiedades de DataGrid.
- Copiar archivos de disco a proyecto.
- Estandarizar formatos en TextBox.
- Utilización de OpenfileDialog
+paneles en C#
+uspo la propiedsa dock
+para poner de color tranparaente el label debo de ir a web y elegir transparent
+
+OpenFileDialog es una clase en C# que pertenece al espacio de nombres System.Windows.
+Forms y se utiliza para mostrar un cuadro de diálogo de selección de archivos en una aplicación Windows Forms. 
+Este cuadro de diálogo permite a los usuarios seleccionar uno o varios archivos de su sistema de archivos local.
+
+El propósito principal de OpenFileDialog es permitir que los usuarios naveguen por su sistema de archivos 
+y seleccionen archivos para abrir o utilizar en una aplicación
+
+-con el opengiledialog vamos a poder que el usuario pueda seleccionar una imagen y luego mostrar esa imagen en un PictureBox cuando se haga clic en el botón "Foto".
+
+-El evento Leave en C# se dispara cuando un control, como un TextBox, pierde el foco, es decir, cuando el usuario cambia su atención a otro control o área de la interfaz. Este evento es útil para realizar acciones o validaciones cuando el usuario ha terminado de interactuar con un control y se está moviendo a otro.
