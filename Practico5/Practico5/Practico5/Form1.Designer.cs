@@ -225,7 +225,7 @@
             // 
             this.pictureBox.BackgroundImage = global::Practico5.Properties.Resources.jefe;
             this.pictureBox.Image = global::Practico5.Properties.Resources.jefe;
-            this.pictureBox.Location = new System.Drawing.Point(504, 42);
+            this.pictureBox.Location = new System.Drawing.Point(508, 46);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(254, 237);
             this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
