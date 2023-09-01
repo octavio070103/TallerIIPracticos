@@ -8,3 +8,12 @@ E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\Prac
 E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\Practico4\Practico4\Practico4\obj\Debug\Practico4.csproj.CoreCompileInputs.cache
 E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\Practico4\Practico4\Practico4\obj\Debug\Practico4.exe
 E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\Practico4\Practico4\Practico4\obj\Debug\Practico4.pdb
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico4\Practico4\Practico4\bin\Debug\Practico4.exe.config
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico4\Practico4\Practico4\obj\Debug\Practico4.exe
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico4\Practico4\Practico4\obj\Debug\Practico4.pdb
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico4\Practico4\Practico4\bin\Debug\Practico4.exe
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico4\Practico4\Practico4\bin\Debug\Practico4.pdb
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico4\Practico4\Practico4\obj\Debug\Practico4.csprojResolveAssemblyReference.cache
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico4\Practico4\Practico4\obj\Debug\Practico4.Form1.resources
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico4\Practico4\Practico4\obj\Debug\Practico4.Properties.Resources.resources
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico4\Practico4\Practico4\obj\Debug\Practico4.csproj.GenerateResource.Cache

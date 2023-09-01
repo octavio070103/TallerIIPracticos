@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Practico4
 {
@@ -81,15 +82,27 @@ namespace Practico4
 
         private void generarFuncion()
         {
+            //limpio el list box antes de usarlo
+            listBoxNum.Items.Clear();//Para limpiar los elementos que se cargaron en un ListBox,elimina todos los elementos de la lsira
+
             int numeroInicial = Int32.Parse(txtDesde.Text);
             int numeroFinal = Int32.Parse(txtHasta.Text);
+            int contador = numeroInicial;
 
-            while (numeroInicial <= numeroFinal)
+            while (contador <= numeroFinal)
             {
-                listBoxNum.Items.Add(numeroInicial);//Esta función nos permite agregar ítem allistBox
-                 numeroInicial = numeroInicial+1;
+                listBoxNum.Items.Add(contador);//Esta función nos permite agregar ítem allistBox
+                contador = contador + 1;
 
             }
+
+            // Agregar datos los datos al gráfico y lo genera
+            chart.Series["Números"].Points.Clear();
+            for (int i = numeroInicial; i <= numeroFinal; i++)
+            {
+                chart.Series["Números"].Points.AddXY(i, i);
+            }
+
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -101,11 +114,15 @@ namespace Practico4
 
         private void btnPares_Click(object sender, EventArgs e)
         {
+            //limpio el list box antes de usarlo
+            listBoxNum.Items.Clear();//Para limpiar los elementos que se cargaron en un ListBox,elimina todos los elementos de la lsira
+
             if (validarCampos())
             {
                 borrarMensajeError();
                 generarPares();
             }
+
         }
         private void generarPares()
         {
@@ -117,6 +134,7 @@ namespace Practico4
                 if(numeroInicial % 2 == 0)
                 {
                     listBoxNum.Items.Add(numeroInicial);//Esta función nos permite agregar ítem allistBox
+                    chart.Series["Números"].Points.AddXY(numeroInicial, numeroInicial);
                 }
               
                 numeroInicial = numeroInicial + 1;
@@ -127,6 +145,7 @@ namespace Practico4
 
         private void btnImpares_Click(object sender, EventArgs e)
         {
+
             if (validarCampos())
             {
                 borrarMensajeError();
@@ -138,11 +157,19 @@ namespace Practico4
             int numeroInicial = Int32.Parse(txtDesde.Text);
             int numeroFinal = Int32.Parse(txtHasta.Text);
 
+            //limpio el list box antes de usarlo
+            // Limpiar el ListBox y el Chart antes de agregar datos nuevos
+            listBoxNum.Items.Clear();
+            chart.Series["Números"].Points.Clear();
+
             while (numeroInicial <= numeroFinal)
             {
                 if (numeroInicial % 2 != 0)
                 {
                     listBoxNum.Items.Add(numeroInicial);//Esta función nos permite agregar ítem allistBox
+               
+                    chart.Series["Números"].Points.AddXY(numeroInicial, numeroInicial);
+                    
                 }
 
                 numeroInicial = numeroInicial + 1;
@@ -153,6 +180,9 @@ namespace Practico4
 
         private void btnPrimos_Click(object sender, EventArgs e)
         {
+            //limpio el list box antes de usarlo
+            listBoxNum.Items.Clear();//Para limpiar los elementos que se cargaron en un ListBox,elimina todos los elementos de la lsira
+
             if (validarCampos())
             {
                 borrarMensajeError();
@@ -185,6 +215,7 @@ namespace Practico4
                 if (divisores ==2)
                 {
                     listBoxNum.Items.Add(numeroInicial);//Esta función nos permite agregar ítem allistBox
+                    chart.Series["Números"].Points.AddXY(numeroInicial, numeroInicial);
                 }
                 divisores = 0;//aca reinicio el contador para el proxiumo numero que qiero saber si es primo
                 numeroInicial = numeroInicial + 1;
@@ -230,6 +261,30 @@ namespace Practico4
                 }
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // Configurar el gráfico al cargar el formulario
+            ConfigureChart();
+        }
+
+        private void ConfigureChart()
+        {
+            // Configuración básica del gráfico
+            chart.ChartAreas.Add(new ChartArea("MainArea"));
+            chart.Series.Add("Números");
+            chart.Series["Números"].ChartType = SeriesChartType.Bar;
+
+            // Configurar los títulos
+            chart.Titles.Add("Gráfico de Números Generados");
+            chart.Titles[0].Font = new System.Drawing.Font("Arial", 14, System.Drawing.FontStyle.Bold);
+
+            // Configurar los ejes
+            chart.ChartAreas["MainArea"].AxisX.Title = "X";
+            chart.ChartAreas["MainArea"].AxisY.Title = "Y";
+        }
+
+       
 
     }
 }

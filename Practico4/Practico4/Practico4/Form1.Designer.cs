@@ -44,23 +44,23 @@
             this.btnPares = new System.Windows.Forms.Button();
             this.btnPrimos = new System.Windows.Forms.Button();
             this.btnImpares = new System.Windows.Forms.Button();
-            this.chartNumGenerados = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartNumGenerados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             this.SuspendLayout();
             // 
             // listBoxNum
             // 
             this.listBoxNum.FormattingEnabled = true;
-            this.listBoxNum.Location = new System.Drawing.Point(312, 103);
+            this.listBoxNum.Location = new System.Drawing.Point(315, 58);
             this.listBoxNum.Name = "listBoxNum";
-            this.listBoxNum.Size = new System.Drawing.Size(347, 212);
+            this.listBoxNum.Size = new System.Drawing.Size(377, 212);
             this.listBoxNum.TabIndex = 0;
             // 
             // lblDesde
             // 
             this.lblDesde.AutoSize = true;
-            this.lblDesde.Location = new System.Drawing.Point(12, 111);
+            this.lblDesde.Location = new System.Drawing.Point(15, 91);
             this.lblDesde.Name = "lblDesde";
             this.lblDesde.Size = new System.Drawing.Size(38, 13);
             this.lblDesde.TabIndex = 1;
@@ -69,7 +69,7 @@
             // lblHasta
             // 
             this.lblHasta.AutoSize = true;
-            this.lblHasta.Location = new System.Drawing.Point(15, 145);
+            this.lblHasta.Location = new System.Drawing.Point(18, 129);
             this.lblHasta.Name = "lblHasta";
             this.lblHasta.Size = new System.Drawing.Size(35, 13);
             this.lblHasta.TabIndex = 2;
@@ -77,14 +77,14 @@
             // 
             // txtDesde
             // 
-            this.txtDesde.Location = new System.Drawing.Point(56, 108);
+            this.txtDesde.Location = new System.Drawing.Point(56, 84);
             this.txtDesde.Name = "txtDesde";
             this.txtDesde.Size = new System.Drawing.Size(100, 20);
             this.txtDesde.TabIndex = 3;
             // 
             // txtHasta
             // 
-            this.txtHasta.Location = new System.Drawing.Point(56, 142);
+            this.txtHasta.Location = new System.Drawing.Point(56, 122);
             this.txtHasta.Name = "txtHasta";
             this.txtHasta.Size = new System.Drawing.Size(100, 20);
             this.txtHasta.TabIndex = 4;
@@ -92,7 +92,7 @@
             // lblListaNm
             // 
             this.lblListaNm.AutoSize = true;
-            this.lblListaNm.Location = new System.Drawing.Point(376, 70);
+            this.lblListaNm.Location = new System.Drawing.Point(443, 31);
             this.lblListaNm.Name = "lblListaNm";
             this.lblListaNm.Size = new System.Drawing.Size(89, 13);
             this.lblListaNm.TabIndex = 5;
@@ -100,7 +100,7 @@
             // 
             // btnFuncion
             // 
-            this.btnFuncion.Location = new System.Drawing.Point(177, 103);
+            this.btnFuncion.Location = new System.Drawing.Point(186, 58);
             this.btnFuncion.Name = "btnFuncion";
             this.btnFuncion.Size = new System.Drawing.Size(102, 20);
             this.btnFuncion.TabIndex = 6;
@@ -114,7 +114,7 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(177, 216);
+            this.btnLimpiar.Location = new System.Drawing.Point(186, 164);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(102, 20);
             this.btnLimpiar.TabIndex = 7;
@@ -124,7 +124,7 @@
             // 
             // btnPares
             // 
-            this.btnPares.Location = new System.Drawing.Point(177, 138);
+            this.btnPares.Location = new System.Drawing.Point(186, 84);
             this.btnPares.Name = "btnPares";
             this.btnPares.Size = new System.Drawing.Size(102, 20);
             this.btnPares.TabIndex = 8;
@@ -134,7 +134,7 @@
             // 
             // btnPrimos
             // 
-            this.btnPrimos.Location = new System.Drawing.Point(177, 190);
+            this.btnPrimos.Location = new System.Drawing.Point(186, 138);
             this.btnPrimos.Name = "btnPrimos";
             this.btnPrimos.Size = new System.Drawing.Size(102, 20);
             this.btnPrimos.TabIndex = 9;
@@ -144,7 +144,7 @@
             // 
             // btnImpares
             // 
-            this.btnImpares.Location = new System.Drawing.Point(177, 164);
+            this.btnImpares.Location = new System.Drawing.Point(186, 111);
             this.btnImpares.Name = "btnImpares";
             this.btnImpares.Size = new System.Drawing.Size(102, 20);
             this.btnImpares.TabIndex = 10;
@@ -152,28 +152,29 @@
             this.btnImpares.UseVisualStyleBackColor = true;
             this.btnImpares.Click += new System.EventHandler(this.btnImpares_Click);
             // 
-            // chartNumGenerados
+            // chart
             // 
             chartArea1.Name = "ChartArea1";
-            this.chartNumGenerados.ChartAreas.Add(chartArea1);
+            this.chart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chartNumGenerados.Legends.Add(legend1);
-            this.chartNumGenerados.Location = new System.Drawing.Point(-2, 242);
-            this.chartNumGenerados.Name = "chartNumGenerados";
+            this.chart.Legends.Add(legend1);
+            this.chart.Location = new System.Drawing.Point(315, 299);
+            this.chart.Name = "chart";
             series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
-            this.chartNumGenerados.Series.Add(series1);
-            this.chartNumGenerados.Size = new System.Drawing.Size(308, 222);
-            this.chartNumGenerados.TabIndex = 11;
-            this.chartNumGenerados.Text = "Numeros Generados";
+            this.chart.Series.Add(series1);
+            this.chart.Size = new System.Drawing.Size(377, 235);
+            this.chart.TabIndex = 11;
+            this.chart.Text = "Numeros Generados";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 461);
-            this.Controls.Add(this.chartNumGenerados);
+            this.ClientSize = new System.Drawing.Size(786, 568);
+            this.Controls.Add(this.chart);
             this.Controls.Add(this.btnImpares);
             this.Controls.Add(this.btnPrimos);
             this.Controls.Add(this.btnPares);
@@ -187,8 +188,9 @@
             this.Controls.Add(this.listBoxNum);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartNumGenerados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,7 +210,7 @@
         private System.Windows.Forms.Button btnImpares;
         private System.Windows.Forms.Button btnPrimos;
         private System.Windows.Forms.Button btnPares;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartNumGenerados;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart;
     }
 }
 
