@@ -49,16 +49,15 @@
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.apellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha_nacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.elminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.eliminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.saldo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.foto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.foto = new System.Windows.Forms.DataGridViewImageColumn();
             this.ruta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -68,7 +67,6 @@
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.Controls.Add(this.btnEliminar);
             this.panel1.Controls.Add(this.btnBorrar);
             this.panel1.Controls.Add(this.txtFoto);
             this.panel1.Controls.Add(this.btnFoto);
@@ -172,7 +170,6 @@
             this.radioButtonHombre.TabStop = true;
             this.radioButtonHombre.Text = "Hombre";
             this.radioButtonHombre.UseVisualStyleBackColor = false;
-        
             // 
             // lblSexo
             // 
@@ -280,7 +277,7 @@
             this.Nombre,
             this.fecha_nacimiento,
             this.sexo,
-            this.elminar,
+            this.eliminar,
             this.saldo,
             this.foto,
             this.ruta});
@@ -288,6 +285,11 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(696, 189);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // apellido
             // 
@@ -309,10 +311,10 @@
             this.sexo.HeaderText = "Sexo";
             this.sexo.Name = "sexo";
             // 
-            // elminar
+            // eliminar
             // 
-            this.elminar.HeaderText = "Eliminar";
-            this.elminar.Name = "elminar";
+            this.eliminar.HeaderText = "Eliminar";
+            this.eliminar.Name = "eliminar";
             // 
             // saldo
             // 
@@ -328,24 +330,6 @@
             // 
             this.ruta.HeaderText = "Ruta";
             this.ruta.Name = "ruta";
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(174, 253);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(81, 39);
-            this.btnEliminar.TabIndex = 15;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click_1);
-            // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
             // 
             // form1
             // 
@@ -389,16 +373,15 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.DataGridViewTextBoxColumn apellido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha_nacimiento;
         private System.Windows.Forms.DataGridViewTextBoxColumn sexo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn elminar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn eliminar;
         private System.Windows.Forms.DataGridViewTextBoxColumn saldo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn foto;
+        private System.Windows.Forms.DataGridViewImageColumn foto;
         private System.Windows.Forms.DataGridViewTextBoxColumn ruta;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 

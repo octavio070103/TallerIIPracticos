@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -88,6 +89,8 @@ namespace Practico5
                 //como  Todos los msgbox devuelven un resultado lógico. podemos hacer el sig if
                 if (ask == DialogResult.Yes)
                 {
+                    //cargo los datos en el datoGrid
+                    dataGridView1_asignarValores();
                     MessageBox.Show("El cliente: " + txtNombre.Text + " " + txtApellido.Text + " se inserto correctamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 }
                 else
@@ -156,7 +159,7 @@ namespace Practico5
                 MessageBox.Show(" El nombre debe de contener solamente letras", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 validacion = false;
             }
-          
+          /*
             string extension = Path.GetExtension(foto).ToLower();
             //validar que el campos Dni solo se ingresen numeros
             if (extension != ".jpg" || extension != ".jpeg" || extension != ".png" || extension != ".PNG" || extension != ".gif" || extension != ".bmp")
@@ -165,7 +168,7 @@ namespace Practico5
                 MessageBox.Show("El formato de imagen debe de ser valido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 validacion = false;
             }
-
+          */
            
             return validacion;
         }
@@ -194,28 +197,77 @@ namespace Practico5
             errorProvider1.SetError(btnFoto, ""); // Limpiar mensaje de error
         }
 
-        private void btnEliminar_Click_1(object sender, EventArgs e)
-        {
-            // Crear la variable "ask" del tipo DialogoREsult ya que MsgBoxREsult es parte del lenguaje Basic y no de C#
-            DialogResult ask;
-
-            //Usamos MessageBox.Show() para mostrar un mensaje de advertencia similar al caso del botón "Guardar", pero con un ícono de exclamación y con el enfoque en el botón "NO" (usando MessageBoxDefaultButton.Button2).
-            ask = MessageBox.Show("Esta apunto de eliminar el registro " + txtNombre.Text + " " + txtApellido.Text, "Confirmar Eliminacion", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
-            //como  Todos los msgbox devuelven un resultado lógico. podemos hacer el sig if
-            if (ask == DialogResult.Yes)
-            {
-                //eliminarCliente();
-                MessageBox.Show("El cliente: " + txtNombre.Text + " " + txtApellido.Text + " se elimino correctamente", "eliminar", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            }
-        }
 
         private void btnLimpiarCampos_Click(object sender, EventArgs e)
+        {
+            limpiarCampos();
+        }
+        private void limpiarCampos()
         {
             txtApellido.Clear();
             txtNombre.Clear();
             txtSaldo.Clear();
             txtFoto.Clear();
+            radioButtonHombre.Checked = false;
+            radioButtonMujer.Checked = false;
             dateTimePicker1.ResetText();
         }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dataGridView1.ScrollBars = ScrollBars.Both;
+            if (e.RowIndex >= 0 && e.ColumnIndex == dataGridView1.Columns["Eliminar"].Index)
+            {
+                dataGridView1.Rows.RemoveAt(e.RowIndex);
+            }
+        }
+
+        private void dataGridView1_asignarValores()
+        {
+            string apellido = txtApellido.Text;
+            string nombre = txtNombre.Text;
+            string saldo = txtSaldo.Text;
+            DateTime fechaDeNac = dateTimePicker1.Value;
+            string sexo = "";
+            string url = txtFoto.Text;
+            Image foto = pictureBox.Image;
+
+            // Agregar una nueva fila al DataGridView con los datos recolectados
+            int rowIndex = dataGridView1.Rows.Add();
+
+            // Asignar los valores a las celdas correspondientes
+            dataGridView1.Rows[rowIndex].Cells["apellido"].Value = apellido;
+            dataGridView1.Rows[rowIndex].Cells["Nombre"].Value = nombre;
+            dataGridView1.Rows[rowIndex].Cells["fecha_nacimiento"].Value = fechaDeNac.ToString("dd/MM/yyyy");
+            dataGridView1.Rows[rowIndex].Cells["eliminar"].Value = "Eliminar"; // Botón de eliminar
+            dataGridView1.Rows[rowIndex].Cells["sexo"].Value = sexo;
+            dataGridView1.Rows[rowIndex].Cells["saldo"].Value = saldo;
+            dataGridView1.Rows[rowIndex].Cells["foto"].Value = ResizeImage(foto, 50, 50); // Redimensiona la imagen
+            dataGridView1.Rows[rowIndex].Cells["ruta"].Value = url;
+
+            // Verificar si el saldo es menor o igual a 50 y cambiar el color de la fila
+            if (Convert.ToInt32(saldo) <= 50)
+            {
+                dataGridView1.Rows[rowIndex].DefaultCellStyle.BackColor = Color.DarkRed;
+            }
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            
+            dataGridView1.Update();
+            //limpio los campos luego de guardar los datos en el data grid
+            limpiarCampos();
+        }
+
+        //con este metodo redimensiono la imagen
+        private Image ResizeImage(Image image, int width, int height)
+        {
+            Bitmap resizedImage = new Bitmap(width, height);
+            using (Graphics graphics = Graphics.FromImage(resizedImage))
+            {
+                graphics.DrawImage(image, 0, 0, width, height);
+            }
+            return resizedImage;
+        }
+
+
     }
 }
