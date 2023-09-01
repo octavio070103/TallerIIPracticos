@@ -8,3 +8,12 @@ E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\Prac
 E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\Practico5\Practico5\Practico5\bin\Debug\Practico5.pdb
 E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\Practico5\Practico5\Practico5\obj\Debug\Practico5.exe
 E:\lic. sistema\3er año\2doCuatrimestre\Taller De Programacion II\practica\Practico5\Practico5\Practico5\obj\Debug\Practico5.pdb
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico5\Practico5\Practico5\bin\Debug\Practico5.exe.config
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico5\Practico5\Practico5\obj\Debug\Practico5.exe
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico5\Practico5\Practico5\obj\Debug\Practico5.pdb
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico5\Practico5\Practico5\bin\Debug\Practico5.exe
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico5\Practico5\Practico5\bin\Debug\Practico5.pdb
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico5\Practico5\Practico5\obj\Debug\Practico5.csprojResolveAssemblyReference.cache
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico5\Practico5\Practico5\obj\Debug\Practico5.form1.resources
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico5\Practico5\Practico5\obj\Debug\Practico5.Properties.Resources.resources
+C:\Users\octav\Desktop\Taller De Programacion II\practica\Practico5\Practico5\Practico5\obj\Debug\Practico5.csproj.GenerateResource.Cache
